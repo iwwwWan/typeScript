@@ -1,0 +1,3 @@
+lottery  - lotteryFun  // 九宫格抽奖
+redPaper - redPaperFun  // 红包雨 
+goldenEgg - initSmashingEggs // 砸金蛋

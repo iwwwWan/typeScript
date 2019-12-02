@@ -1,0 +1,1485 @@
+@charset "UTF-8";
+.lotteryPage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 30;
+  background-image: url(../imgs/bg-img.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #FA4435;
+  display: none;
+  overflow-y: scroll;
+}
+
+.lotteryPage .lotteryRule {
+  position: absolute;
+  width: 2.64533rem;
+  line-height: 0.85333rem;
+  background-color: #F41C38;
+  border-top-left-radius: 0.42667rem;
+  border-bottom-left-radius: 0.42667rem;
+  font-size: 0.512rem;
+  color: #F5F5F5;
+  text-align: center;
+  right: 0;
+  top: 0.49067rem;
+}
+
+.lotteryPage .lotteryCont {
+  position: absolute;
+  top: 7.46667rem;
+  left: 0.64rem;
+}
+
+.lotteryPage .lotteryCont > p {
+  color: #FFEEB5;
+  font-size: 0.68267rem;
+  line-height: 0.42667rem;
+  margin-left: 1.49333rem;
+  line-height: 1.06667rem;
+}
+
+.lotteryPage .lotteryCont p:nth-child(3) {
+  margin-top: 0.42667rem;
+}
+
+.lotteryPage .lotteryCont p:last-child {
+  font-size: 0.59733rem;
+}
+
+.lotteryPage .rafflingNum {
+  margin: 0 auto;
+  background-color: #FFF3CC;
+  color: #333333;
+  border-radius: 0.512rem;
+  width: 8.21333rem;
+  font-size: 0.59733rem;
+  text-align: center;
+  line-height: 1.024rem;
+}
+
+.lotteryPage .rafflingNum b {
+  color: #F63039;
+  font-size: 0.85333rem;
+}
+
+.lotteryPage .rafflingNum:before {
+  content: '';
+  display: inline-block;
+  width: 0.91733rem;
+  height: 0.85333rem;
+  background-image: url("../imgs/gift.png");
+  background-size: 100% 100%;
+  transform: translateY(0.21333rem);
+  margin-right: 0.42667rem;
+}
+
+#luck {
+  margin: 0 auto;
+  width: 14.72rem;
+  background-image: url("../imgs/lotteryBG.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 1.17333rem 0 1.81333rem 0.42667rem;
+  margin-top: 0.64rem;
+}
+
+#lotteryBtn .cjBtn,
+.shanDeng .active,
+.shanDeng td {
+  width: 3.62667rem;
+  height: 3.30667rem;
+}
+
+#lotteryBtn .cjBtn img,
+.shanDeng .active img,
+.shanDeng td img {
+  width: 100%;
+  height: 100%;
+}
+
+table {
+  margin: 0 auto;
+}
+
+#lotteryBtn.cjBtn {
+  background-image: url(../imgs/cjBtn.png);
+  background-size: 100% 100%;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-user-select: none;
+  -moz-user-focus: none;
+  -moz-user-select: none;
+}
+
+#luck .active {
+  background-image: url(../imgs/active.png);
+}
+
+td {
+  text-align: center;
+  background-image: url(../imgs/proBj.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 4.16rem;
+  height: 3.456rem;
+  margin: 0 0.064rem;
+  margin-top: 0.10667rem;
+}
+
+td img {
+  width: 2.98667rem;
+  margin-top: 0.46933rem;
+}
+
+.lotteryMark {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 30;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.lotteryMark .getPrize,
+.lotteryMark .againLottery,
+.lotteryMark .getGold {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 12.58667rem;
+  height: 16.64rem;
+  transform: translate(-50%, -50%);
+  background-image: url("../imgs/getPrizeBg.png");
+  background-size: 100% 100%;
+  padding-top: 1.06667rem;
+  display: none;
+}
+
+.lotteryMark .getPrize h1,
+.lotteryMark .againLottery h1,
+.lotteryMark .getGold h1 {
+  color: #FFF3CC;
+  font-size: 1.28rem;
+  text-align: center;
+  line-height: 1.92rem;
+  font-weight: bold;
+}
+
+.lotteryMark .getPrize p,
+.lotteryMark .againLottery p,
+.lotteryMark .getGold p {
+  color: #FFF3CC;
+  line-height: 1.06667rem;
+  font-size: 0.59733rem;
+  width: 9.792rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.lotteryMark .getPrize p b,
+.lotteryMark .againLottery p b,
+.lotteryMark .getGold p b {
+  font-weight: 500;
+}
+
+.lotteryMark .getPrize .lotteryPrize,
+.lotteryMark .againLottery .lotteryPrize,
+.lotteryMark .getGold .lotteryPrize {
+  width: 9.81333rem;
+  margin-left: 1.70667rem;
+  margin-top: 2.98667rem;
+}
+
+.lotteryMark .getPrize button,
+.lotteryMark .againLottery button,
+.lotteryMark .getGold button {
+  display: block;
+  margin: 0 auto;
+  background: linear-gradient(0deg, #f45c44, #f1373f);
+  box-shadow: 0px 5px 5px 0px rgba(252, 195, 137, 0.5);
+  border: 0;
+  outline: none;
+  color: #FFF3CC;
+  font-size: 0.68267rem;
+  width: 8.23467rem;
+  line-height: 1.70667rem;
+  border-radius: 0.85333rem;
+  margin-top: 1.28rem;
+}
+
+.lotteryMark .againLottery {
+  background-image: url("../imgs/arigin.png");
+  text-align: center;
+}
+
+.lotteryMark .againLottery h1 {
+  color: #333;
+  margin-top: 0.64rem;
+}
+
+.lotteryMark .againLottery p {
+  color: #333;
+}
+
+.lotteryMark .againLottery .againImg {
+  width: 4.48rem;
+  margin-top: 2.98667rem;
+}
+
+.lotteryMark .againLottery button {
+  margin-top: 1.70667rem;
+}
+
+.lotteryMark .getGold {
+  text-align: center;
+  background-image: url("../imgs/getGoldBg.png");
+}
+
+.lotteryMark .getGold p {
+  text-align: left;
+}
+
+.lotteryMark .getGold .goldImg {
+  width: 6.4rem;
+  margin-top: 2.77333rem;
+}
+
+.lotteryMark .getGold button {
+  margin-top: 0.96rem;
+}
+
+.lotteryMark .lotteryMarkClose {
+  position: absolute;
+  right: 0;
+  top: -1.28rem;
+  width: 1.04533rem;
+  height: 1.04533rem;
+}
+
+.lotteryMark .lotteryNone {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 12.58667rem;
+  height: 15.616rem;
+  transform: translate(-50%, -50%);
+  background-image: url("../imgs/lotteryNoneBg.png");
+  background-size: 100% 100%;
+  text-align: center;
+}
+
+.lotteryMark .lotteryNone h1 {
+  color: #333;
+  font-size: 0.93867rem;
+  font-weight: bold;
+  line-height: 0.85333rem;
+  margin-top: 1.49333rem;
+}
+
+.lotteryMark .lotteryNone p {
+  text-align: left;
+  color: #333333;
+  font-size: 0.59733rem;
+  margin-left: 1.42933rem;
+  line-height: 1.06667rem;
+  margin-top: 0.21333rem;
+}
+
+.lotteryMark .lotteryNone button {
+  display: block;
+  background: linear-gradient(0deg, #f45c44, #f1373f);
+  box-shadow: 0px 5px 5px 0px rgba(252, 195, 137, 0.5);
+  border: 0;
+  outline: none;
+  color: #FFF3CC;
+  font-size: 0.68267rem;
+  width: 8.23467rem;
+  line-height: 1.70667rem;
+  border-radius: 0.85333rem;
+  margin-top: 1.28rem;
+  position: absolute;
+  bottom: 0.896rem;
+  left: 2.176rem;
+}
+
+.lotteryCloseBtn {
+  position: absolute;
+  right: 0.61867rem;
+  top: 0.42667rem;
+  width: 1.06667rem;
+}
+
+.lotteryIframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  background: #fff;
+  z-index: 60;
+}
+
+.lotteryIframe .lotteryIframe {
+  background-color: #fff;
+}
+
+.redPaperPage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+
+.start_box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.5;
+}
+
+.start_box span {
+  display: inline-block;
+  width: 4.26667rem;
+  height: 4.26667rem;
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -70%);
+  text-align: center;
+  font-size: 3.2rem;
+}
+
+.start_box p {
+  width: 100%;
+  height: auto;
+  color: #FF0000;
+  font-weight: bold;
+  position: absolute;
+  z-index: 999;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 4.26667rem;
+  font-size: 1.70667rem;
+}
+
+.redpack_box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.redpack_box li {
+  position: absolute;
+  top: -100px;
+}
+
+.redpack_box li a {
+  display: block;
+}
+
+.pop_box {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.pop_box .pop_none,
+.pop_box .pop_nomal {
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.pop_box .pop_none h4,
+.pop_box .pop_nomal h4 {
+  color: #c7cec3;
+  text-align: left;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 0.64rem;
+  text-indent: 1.28rem;
+}
+
+.pop_box > div {
+  width: 12.71467rem;
+  height: 7.85067rem;
+  border-radius: 0.49067rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -70%);
+  background-image: url(../imgs/RE_pop_bg.png);
+  background-size: 100% 100%;
+  padding: 0 1.28rem;
+  text-align: center;
+  display: none;
+}
+
+.pop_box > div .cashBG {
+  width: 3.09333rem;
+  height: 3.09333rem;
+  background-image: url(../imgs/RE_cash_bg.png);
+  background-size: 100% 100%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 0.64rem;
+}
+
+.pop_box > div .cashBG img {
+  width: 2.496rem;
+  margin-top: 0.53333rem;
+}
+
+.pop_box > div .closeInRE {
+  display: block;
+  width: 1.45067rem;
+  position: absolute;
+  right: 0.192rem;
+  top: 0.04267rem;
+  padding: 0.42667rem;
+}
+
+.pop_box > div h3 {
+  color: #c7cec3;
+  z-index: 999;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 0.64rem;
+  margin-top: 1.088rem;
+}
+
+.pop_box > div p {
+  color: #ffb83d;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.59733rem;
+  margin-top: 0.448rem;
+}
+
+.pop_box .pop_gold {
+  height: 8.74667rem;
+}
+
+.redPaper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  background-image: url("../imgs/answerBg.png");
+  background-size: 100% 100%;
+  display: none;
+}
+
+.redpack_box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.redpack_box li {
+  position: absolute;
+  top: -100px;
+}
+
+.redpack_box li a {
+  display: block;
+}
+
+.pop_box {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.pop_box .pop_none,
+.pop_box .pop_nomal {
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.pop_box .pop_none h4,
+.pop_box .pop_nomal h4 {
+  color: #c7cec3;
+  text-align: left;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 0.64rem;
+  text-indent: 1.28rem;
+}
+
+.pop_box > div {
+  width: 12.71467rem;
+  height: 7.85067rem;
+  border-radius: 0.49067rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -70%);
+  background-image: url(../imgs/RE_pop_bg.png);
+  background-size: 100% 100%;
+  padding: 0 1.28rem;
+  text-align: center;
+  display: none;
+}
+
+.pop_box > div .cashBG {
+  width: 3.09333rem;
+  height: 3.09333rem;
+  background-image: url(../imgs/RE_cash_bg.png);
+  background-size: 100% 100%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 0.64rem;
+}
+
+.pop_box > div .cashBG img {
+  width: 2.496rem;
+  margin-top: 0.53333rem;
+}
+
+.pop_box > div .closeInRE {
+  display: block;
+  width: 1.45067rem;
+  position: absolute;
+  right: 0.192rem;
+  top: 0.04267rem;
+  padding: 0.42667rem;
+}
+
+.pop_box > div h3 {
+  color: #c7cec3;
+  z-index: 999;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 0.64rem;
+  margin-top: 1.088rem;
+}
+
+.pop_box > div p {
+  color: #ffb83d;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.59733rem;
+  margin-top: 0.448rem;
+}
+
+.pop_box .pop_gold {
+  height: 8.74667rem;
+}
+
+.smashingEggsPage {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 30;
+  background-image: url(../imgs/smashingEggsBg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #4C0083;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.smashingEggsTitle {
+  width: 13.54667rem;
+  height: 7.936rem;
+  background-image: url("../imgs/smashingEggsTitleImg.png");
+  background-size: 100% 100%;
+  margin-left: 1.28rem;
+  margin-top: 1.62133rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.smashingEggsTitle p {
+  margin-bottom: 1.49333rem;
+  color: #271B79;
+  font-size: 0.85333rem;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.128rem;
+}
+
+.whiteClose {
+  width: 1.19467rem;
+  height: 1.19467rem;
+  position: absolute;
+  right: 0.68267rem;
+  top: 0.64rem;
+}
+
+.eggsImg {
+  position: absolute;
+  width: 41%;
+  top: 10.66667rem;
+  left: 29.5%;
+}
+
+.hammer {
+  width: 4.88533rem;
+  position: absolute;
+  right: 2.56rem;
+  top: 9.6rem;
+  transform-origin: 100% 100%;
+  transform: rotate(45deg);
+  z-index: 40;
+}
+
+.hammerTransition {
+  animation: hammerTransition 1.7s;
+  animation-fill-mode: forwards;
+}
+
+.eggsOrnamentImg {
+  width: 13.93067rem;
+  position: absolute;
+  top: 10.66667rem;
+  z-index: 30;
+  left: 0.40533rem;
+  pointer-events: none;
+}
+
+.smashingEggsBtn {
+  width: 3.49867rem;
+  position: absolute;
+  top: 19.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 40;
+}
+
+.smashingEggsWrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 50;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.eggsOrnamentGif {
+  position: absolute;
+  z-index: 30;
+  pointer-events: none;
+  width: 80%;
+  left: 11.5%;
+  top: 6.08rem;
+}
+
+.smashingEggsAlert {
+  width: 11.49867rem;
+  height: 11.81867rem;
+  background-color: #fff;
+  border-radius: 0.42667rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.smashingEggsAlert h1 {
+  color: #333333;
+  font-size: 0.81067rem;
+  font-weight: 500;
+  margin-top: 0.21333rem;
+}
+
+.smashingEggsAlert p {
+  color: #F74B57;
+  font-size: 0.512rem;
+  margin-top: 0.21333rem;
+}
+
+.smashingEggsAlert .ticket {
+  width: 10.13333rem;
+  margin-top: 0.832rem;
+}
+
+.smashingEggsAlert button {
+  background-color: #FFDB8C;
+  width: 9.38667rem;
+  height: 1.87733rem;
+  line-height: 1.87733rem;
+  text-align: center;
+  font-size: 0.68267rem;
+  color: #5A3B26;
+  border-radius: 0.93867rem;
+  margin-top: 1.06667rem;
+}
+
+.eggsTopImg {
+  width: 5.33333rem;
+  margin-top: -1.92rem;
+}
+
+.alertMsg {
+  z-index: 52;
+}
+
+@keyframes hammerTransition {
+  0% {
+    right: 2.56rem;
+    transform: rotate(45deg);
+  }
+  35% {
+    right: 3.2rem;
+    transform: rotate(0deg);
+  }
+  55% {
+    right: 2.77333rem;
+    transform: rotate(45deg);
+  }
+  75% {
+    right: 3.2rem;
+    transform: rotate(0deg);
+  }
+  99% {
+    right: 3.2rem;
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    right: 3.2rem;
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+}
+
+.groupBuyingWrap {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 30;
+  background-color: #157B48;
+  background-size: 100% 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.groupBuyingWrap #closeGroupBuying {
+  width: 1.024rem;
+  height: 1.024rem;
+  position: absolute;
+  top: 0.64rem;
+  right: 0.64rem;
+  z-index: 999;
+}
+
+.groupBuyingWrap .groupBuyingTitle {
+  height: 1.87733rem;
+  position: absolute;
+  top: 1.19467rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+}
+
+.groupBuyingWrap .groupBuyingBgLayer {
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.groupBuyingWrap .groupBuyingBgLayer .groupBuyingContainer {
+  width: 14.976rem;
+  position: relative;
+  margin: 0 auto;
+  border: #EECB8B 0.04267rem solid;
+  border-radius: 0.42667rem;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+.groupBuyingWrap .groupBuyingBgLayer .groupBuyingContainer .groupBuying-swiper-container {
+  width: 100%;
+  height: 8.40533rem;
+  position: relative;
+}
+
+.groupBuyingWrap .groupBuyingBgLayer .groupBuyingContainer .groupBuying-swiper-container .swiper-pagination-bullet {
+  background: white;
+  opacity: 0.7;
+}
+
+.groupBuyingWrap .groupBuyingBgLayer .groupBuyingContainer .groupBuying-swiper-container .swiper-pagination-bullet-active {
+  background: #FF9500;
+  opacity: 0.7;
+}
+
+.groupBuyingWrap .groupBuyingBgLayer .groupBuyingContainer .groupBuying-swiper-container .swiper-slide {
+  text-align: center;
+}
+
+.groupBuyingWrap .groupBuyingBgLayer .groupBuyingContainer .descBox {
+  width: 100%;
+  border-bottom: #F2F4F4 0.128rem solid;
+  padding: 0.53333rem 0.49067rem 0.81067rem;
+}
+
+.groupBuyingWrap .groupBuyingBgLayer .groupBuyingContainer .descBox .originalPrice {
+  text-decoration: line-through;
+  font-size: 0.768rem;
+  color: #7D7D7D;
+  margin-bottom: 0.32rem;
+}
+
+.groupBuyingWrap .groupBuyingBgLayer .groupBuyingContainer .descBox .desc {
+  color: #333333;
+  font-size: 0.59733rem;
+  text-align: justify;
+}
+
+.groupBuyingWrap .groupBuyingBgLayer .groupBuyingContainer .groupBuying-publicGroupBox {
+  width: 100%;
+  border-bottom: #F2F4F4 0.128rem solid;
+}
+
+.groupBuyingWrap .groupBuyingBgLayer .groupBuyingContainer .groupBuying-publicGroupBox > .groupBuying-titleBox {
+  width: 100%;
+  padding: 0.61867rem 0 0.46933rem 0.55467rem;
+}
+
+.groupBuyingWrap .groupBuyingBgLayer .groupBuyingContainer .groupBuying-publicGroupBox > .groupBuying-titleBox > .left {
+  color: #333333;
+  font-weight: bold;
+  font-size: 0.85333rem;
+  margin-right: 0.40533rem;
+}
+
+.groupBuyingWrap .groupBuyingBgLayer .groupBuyingContainer .groupBuying-publicGroupBox > .groupBuying-titleBox > .right {
+  color: #7D7D7D;
+  font-size: 0.59733rem;
+}
+
+.groupBuyingWrap .groupBuyingBgLayer .groupBuyingContainer .groupBuying-publicGroupBox > .groupBuying-lowerBox {
+  width: 100%;
+  height: 3.456rem;
+  margin-bottom: 0.59733rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.groupBuyingWrap .groupBuyingBgLayer .groupBuyingContainer .groupBuying-publicGroupBox > .groupBuying-lowerBox > .left {
+  width: 4.75733rem;
+  height: 3.456rem;
+  display: inline-block;
+  flex: 0;
+}
+
+.groupBuyingWrap .groupBuyingBgLayer .groupBuyingContainer .groupBuying-publicGroupBox > .groupBuying-lowerBox > .left > img {
+  width: 4.75733rem;
+  height: 3.456rem;
+  border-radius: 0.21333rem;
+}
+
+.groupBuyingWrap .groupBuyingBgLayer .groupBuyingContainer .groupBuying-publicGroupBox > .groupBuying-lowerBox > .middle {
+  display: inline-block;
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin-left: 0.512rem;
+  margin-top: 0.21333rem;
+}
+
+.groupBuyingWrap .groupBuyingBgLayer .groupBuyingContainer .groupBuying-publicGroupBox > .groupBuying-lowerBox > .middle .goodsName {
+  min-width: 6em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 0.768rem;
+  color: #333;
+}
+
+.groupBuyingWrap .groupBuyingBgLayer .groupBuyingContainer .groupBuying-publicGroupBox > .groupBuying-lowerBox > .middle .originalPrice {
+  text-decoration: line-through;
+  font-size: 0.59733rem;
+  color: #7D7D7D;
+}
+
+.groupBuyingWrap .groupBuyingBgLayer .groupBuyingContainer .groupBuying-publicGroupBox > .groupBuying-lowerBox > .middle .groupPrice {
+  font-size: 0.768rem;
+  color: #F74B57;
+  font-weight: bold;
+}
+
+.groupBuyingWrap .groupBuyingBgLayer .groupBuyingContainer .groupBuying-publicGroupBox > .groupBuying-lowerBox > .right {
+  display: inline-block;
+  flex: 0;
+  width: 3.84rem;
+  position: absolute;
+  right: 0.21333rem;
+  bottom: 0.21333rem;
+}
+
+.groupBuyingWrap .groupBuyingBgLayer .groupBuyingContainer .groupBuying-publicGroupBox > .groupBuying-lowerBox > .right > #joinNow {
+  width: 3.84rem;
+  height: 1.408rem;
+  background: linear-gradient(0deg, #ff7d27, #ffaf50);
+  border-radius: 0.704rem;
+  color: #fff;
+  line-height: 1.408rem;
+  font-size: 0.68267rem;
+  margin-top: 0.78933rem;
+}
+
+.openRedEnvelopeWrap {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2147483646;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-size: 100% 100%;
+}
+
+.openRedEnvelopeWrap .redEnvelopeCloseBtn {
+  position: absolute;
+  right: 0;
+  top: 1.728rem;
+  width: 1.28rem;
+  height: 1.28rem;
+}
+
+.openRedEnvelopeWrap .countdownPage {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.openRedEnvelopeWrap .countdownPage .countdownPageBgImgBox {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  z-index: 31;
+}
+
+.openRedEnvelopeWrap .countdownPage .countdownPageBgImgBox .countdownPageMainTitle {
+  position: relative;
+  z-index: 32;
+  width: 100%;
+  padding: 0 0.42667rem;
+  text-align: center;
+  margin-top: 3.2rem;
+  font-size: 1.70667rem;
+  line-height: 1.70667rem;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  text-shadow: 0 0 0.512rem rgba(255, 20, 73, 0.8);
+}
+
+.openRedEnvelopeWrap .countdownPage .countdownPageBgImgBox .countdownPageSubTitle {
+  position: relative;
+  z-index: 32;
+  width: 100%;
+  padding: 0 0.64rem;
+  margin-top: 0.832rem;
+  text-align: center;
+  font-size: 1.06667rem;
+  line-height: 1.06667rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #fff105;
+  text-shadow: 0px 0px 17px #ff1449;
+}
+
+.openRedEnvelopeWrap .countdownPage .countdownPageBgImgBox .countdownPageCountdownNumber {
+  position: relative;
+  width: 100%;
+  margin-top: 0.64rem;
+  text-align: center;
+  z-index: 32;
+  font-size: 6.4rem;
+  line-height: 6.4rem;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  text-shadow: 0px 0px 24px #ff1449;
+}
+
+.openRedEnvelopeWrap .redEnvelopeBeforeOpenPage {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.openRedEnvelopeWrap .redEnvelopeBeforeOpenPage .redEnvelopeBeforeOpenPageBgImgBox {
+  width: 11.94667rem;
+  height: 17.62133rem;
+  position: absolute;
+  top: 9.2%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.openRedEnvelopeWrap .redEnvelopeBeforeOpenPage .redEnvelopeBeforeOpenPageBgImgBox #redEnvelopeBeforeOpenPageOpenBtn {
+  width: 3.584rem;
+  height: 3.584rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2.34667rem;
+}
+
+.openRedEnvelopeWrap .redEnvelopeGetAwardPage {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.openRedEnvelopeWrap .redEnvelopeGetAwardPage .redEnvelopeGetAwardPageBgImgBox {
+  width: 11.94667rem;
+  height: 17.62133rem;
+  position: absolute;
+  top: 9.2%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.openRedEnvelopeWrap .redEnvelopeGetAwardPage .redEnvelopeGetAwardPageBgImgBox #redEnvelopeGetAwardPageReceiveBtn {
+  width: 3.584rem;
+  height: 3.584rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2.34667rem;
+}
+
+.openRedEnvelopeWrap .redEnvelopeGetAwardPage .redEnvelopeGetAwardPageBgImgBox .awardNumBox {
+  margin-top: 6.10133rem;
+  font-size: 2.56rem;
+  line-height: 2.56rem;
+  font-weight: bold;
+  color: #e41c34;
+  position: relative;
+  display: inline-block;
+}
+
+.openRedEnvelopeWrap .redEnvelopeGetAwardPage .redEnvelopeGetAwardPageBgImgBox .awardNumBox::after {
+  content: '元';
+  position: absolute;
+  right: -1.30133rem;
+  bottom: 0.29867rem;
+  font-size: 1.024rem;
+  line-height: 1.024rem;
+  font-weight: bold;
+  color: #e41c34;
+}
+
+.openRedEnvelopeWrap .redEnvelopeGetAwardPage .redEnvelopeGetAwardPageBgImgBox .awardWords {
+  font-size: 0.68267rem;
+  font-weight: 500;
+  color: #e41c34;
+  line-height: 1.472rem;
+  text-align: center;
+  padding: 0 0.42667rem;
+  height: 4em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.openRedEnvelopeWrap .redEnvelopeEmptyHandedPage {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.openRedEnvelopeWrap .redEnvelopeEmptyHandedPage .redEnvelopeEmptyHandedPageBgImgBox {
+  width: 11.94667rem;
+  height: 17.62133rem;
+  position: absolute;
+  top: 9.2%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.openRedEnvelopeWrap .redEnvelopeEmptyHandedPage .redEnvelopeEmptyHandedPageBgImgBox #redEnvelopeEmptyHandedPageConfirmBtn {
+  width: 3.584rem;
+  height: 3.584rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2.34667rem;
+}
+
+.openRedEnvelopeWrap .redEnvelopeEmptyHandedPage .redEnvelopeEmptyHandedPageBgImgBox .awardNumBox {
+  margin-top: 6.10133rem;
+  font-size: 2.56rem;
+  line-height: 2.56rem;
+  font-weight: bold;
+  color: #666666;
+  position: relative;
+  display: inline-block;
+}
+
+.openRedEnvelopeWrap .redEnvelopeEmptyHandedPage .redEnvelopeEmptyHandedPageBgImgBox .awardNumBox::after {
+  content: '元';
+  position: absolute;
+  right: -1.30133rem;
+  bottom: 0.29867rem;
+  font-size: 1.024rem;
+  line-height: 1.024rem;
+  font-weight: bold;
+  color: #666666;
+}
+
+.openRedEnvelopeWrap .redEnvelopeEmptyHandedPage .redEnvelopeEmptyHandedPageBgImgBox .awardWords {
+  font-size: 0.68267rem;
+  font-weight: 500;
+  color: #666666;
+  line-height: 1.472rem;
+  text-align: center;
+  padding: 0 0.42667rem;
+  height: 4em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.openRedEnvelopeWrap .redEnvelopeReEntryPage {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.openRedEnvelopeWrap .redEnvelopeReEntryPage .redEnvelopeReEntryPageBgImgBox {
+  width: 11.94667rem;
+  height: 17.62133rem;
+  position: absolute;
+  top: 9.2%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.openRedEnvelopeWrap .redEnvelopeReEntryPage .redEnvelopeReEntryPageBgImgBox #redEnvelopeReEntryConfirmBtn {
+  width: 3.584rem;
+  height: 3.584rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2.34667rem;
+}
+
+.openRedEnvelopeWrap .redEnvelopeReEntryPage .redEnvelopeReEntryPageBgImgBox .awardWords1 {
+  margin-top: 7.08267rem;
+  font-size: 1.024rem;
+  line-height: 1.024rem;
+  font-weight: bold;
+  color: #666666;
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  padding: 0 0.64rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.openRedEnvelopeWrap .redEnvelopeReEntryPage .redEnvelopeReEntryPageBgImgBox .awardWords2 {
+  font-size: 0.68267rem;
+  font-weight: 500;
+  color: #666666;
+  line-height: 1.472rem;
+  text-align: center;
+  padding: 0 0.64rem;
+  height: 4em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  animation: zoomIn 400ms;
+  animation-fill-mode: forwards;
+}
+
+.publicLottery {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  background-image: url("../imgs/lottery/publicLotteryBg.png");
+  background-size: 100% 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #FF8F0C;
+  z-index: 30;
+}
+
+.publicLottery .titleImg {
+  width: 11.94667rem;
+  margin-left: 1.92rem;
+  margin-top: 1.06667rem;
+  position: relative;
+  z-index: 10;
+}
+
+.publicLottery #luck {
+  background-image: url("../imgs/lottery/lotteryContBg.png");
+  height: 17.856rem;
+  padding: 0;
+  padding-top: 5.33333rem;
+  margin-top: -0.42667rem;
+}
+
+.publicLottery #luck .active {
+  background-image: url("../imgs/lottery/active.png");
+}
+
+.publicLottery #luck td {
+  background-image: url("../imgs/lottery/proBj.png");
+  width: 3.94667rem;
+  height: 3.15733rem;
+  overflow: hidden;
+}
+
+.publicLottery #luck td img {
+  width: 2.98667rem;
+  margin-top: 0.21333rem;
+}
+
+.publicLottery #luck td p {
+  color: #712021;
+  font-size: 0.512rem;
+  margin-top: 0.064rem;
+}
+
+.publicLottery #luck .cjBtn {
+  background-image: url("../imgs/lottery/cjBtn.png");
+}
+
+.publicLottery #luck .flaseBtn {
+  background-image: url("../imgs/lottery/falseBtn.png");
+}
+
+.publicLottery p {
+  font-size: 0.59733rem;
+  color: #FFFFFF;
+  font-weight: 500;
+  margin-top: 1.06667rem;
+  text-align: center;
+}
+
+.publicLottery p b {
+  font-size: 0.59733rem;
+  color: #FFF000;
+  margin: 0 0.21333rem;
+}
+
+.publicLottery .lotteryMark .lotteryPrize {
+  width: 8.74667rem;
+  margin-left: 1.94133rem;
+  height: 5.376rem;
+  margin-top: 1.92rem;
+}
+
+.publicLottery .getPrize,
+.publicLottery .againLottery,
+.publicLottery .getGold {
+  height: 15.82933rem;
+}
+
+.publicLottery .getPrize button,
+.publicLottery .againLottery button,
+.publicLottery .getGold button {
+  width: 10.24rem;
+  height: 1.70667rem;
+  line-height: 1.70667rem;
+  margin-top: 0.85333rem;
+}
+
+.publicLottery .lotteryNone {
+  background: transparent;
+}
+
+.publicLottery .lotteryNone .lotteryNoneImg {
+  width: 13.11573rem;
+}
+
+.publicLottery .lotteryNone .lotteryMarkClose {
+  top: 2.56rem;
+  right: -0.64rem;
+  width: 1.19467rem;
+  height: 1.19467rem;
+}
+
+.publicLottery .lotteryNone button {
+  width: 5.97333rem;
+  height: 1.70667rem;
+  background-image: url("../imgs/lottery/lotteryNoneButtonBg.png");
+  background-size: 100% 100%;
+  box-shadow: none;
+  left: 3.56267rem;
+  bottom: 3.2rem;
+}
+
+@media (min-device-width: 768px) {
+  .publicFinishPageMainBox {
+    position: relative !important;
+    margin-top: 0 !important;
+  }
+}
+
+.publicFinishPage {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2147483646;
+  background: linear-gradient(180deg, #fead7a 13%, #fceaca 100%);
+  background-size: 100% 100%;
+}
+
+.publicFinishPage .closeInPublicFinishPage {
+  position: absolute;
+  right: 0.64rem;
+  top: 0.64rem;
+  width: 1.28rem;
+  height: 1.28rem;
+  z-index: 32;
+}
+
+.publicFinishPage .publicFinishPageMainBox {
+  position: relative;
+  margin-top: 20%;
+}
+
+.publicFinishPage .publicFinishPageMainBox .topBg {
+  position: absolute;
+  z-index: 31;
+  top: -3.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16rem;
+  height: 10.432rem;
+}
+
+.publicFinishPage .publicFinishPageMainBox .letterBg {
+  position: absolute;
+  z-index: 31;
+  width: 15.744rem;
+  height: 21.41867rem;
+  top: 1.19467rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("https://pic-oss.lingkehudong.com/images/publicInteractionPoint/envelopeBg.jpg");
+  background-size: 100% 100%;
+}
+
+.publicFinishPage .publicFinishPageMainBox .letterBg .titleText {
+  padding-top: 10.45333rem;
+  padding-bottom: 0.21333rem;
+  font-size: 0.768rem;
+  font-weight: 500;
+  color: #f74b57;
+  text-align: center;
+}
+
+.publicFinishPage .publicFinishPageMainBox .letterBg .contentText {
+  font-size: 0.59733rem;
+  font-weight: 400;
+  color: #f74b57;
+  line-height: 1.024rem;
+  text-align: justify;
+  padding: 0 3.2rem;
+  max-height: 5em;
+  overflow: hidden;
+}

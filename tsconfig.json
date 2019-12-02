@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "outDir": "./js",
+        "allowJs": true,
+        "target": "es5",
+        "noFallthroughCasesInSwitch":true, //防止switch中case无break
+        "noEmitOnError": true,
+        "watch": true
+    },
+    "include": [
+        "./ts/*"
+    ]
+}

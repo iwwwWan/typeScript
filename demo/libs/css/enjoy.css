@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    /* H5禁用长摁选择文本 */ 
+    /* -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    -webkit-overflow-scrolling: touch; */
+}
+html,body{
+    height: 100%;
+}
+body{
+    position: relative;
+}
+/*修改ios按钮默认样式*/
+input[type="button"], input[type="submit"], input[type="reset"],button{
+    -webkit-appearance: none;
+}
+.main{
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+h1,h2,h3,h4,h5{
+    font-weight:normal;
+}
+ol,ul,li{
+    list-style: none;
+}
+img{
+    vertical-align:top;
+}
+.center{
+   text-align: center;
+   margin-left: 50%; 
+   transform: translateX(-50%);
+}
+a{
+    text-decoration:none;
+    cursor:pointer;
+    -webkit-touch-callout:none
+}
+a:focus,a:active{
+    outline:0
+}
+em,i{
+    font-style: normal;
+}
+button{
+    border: none;
+    background: none;
+    outline: 0;
+    /* 可解决ios 无法点击问题*/
+    cursor: pointer;
+}
+/* 遮罩层 */
+.wrap.mark{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 21;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow-y: scroll;
+}
+.miniAlertBg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url('../../Main/imgs/miniAlertBg.png');
+    background-size: 100% 100%;
+}
+
+.smallAlertBg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url('../../Main/imgs/smallAlertBg.png');
+    background-size: 100% 100%;
+}
+
+.mediumAlertBg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url('../../Main/imgs/mediumAlertBg.png');
+    background-size: 100% 100%;
+}
+
+.bigAlertBg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url('../../Main/imgs/bigAlertBg.png');
+    background-size: 100% 100%;
+}
+.alertClose{
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    top: 0;
+    background-image: url('../../Main/imgs/alertClose.png');
+    background-size: 100% 100%;
+}

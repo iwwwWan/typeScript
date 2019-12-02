@@ -1,0 +1,27 @@
+{
+  "devDependencies": {
+    "@types/jquery": "^3.3.31",
+    "jquery": "^3.4.1",
+    "swiper": "^5.2.1",
+    "typescript": "^3.7.2",
+    "web": "^0.0.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-server": "^0.1.2"
+  },
+  "name": "typeScript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "_jquery@3.4.1@jquery": "^3.4.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev": "webpack-dev-server --mode development --config=config/webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
